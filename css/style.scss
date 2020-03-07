@@ -1,0 +1,203 @@
+     %paralax {
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+     
+     %t-item {
+         display: table;
+         height: 100%;
+         width: 100%;
+     }
+     
+     %t-cell {
+         display: table-cell;
+         vertical-align: middle;
+     }
+     
+     %alignBottom {
+         position: absolute;
+         bottom: 0;
+         margin: 0 auto;
+         left: 0;
+         right: 0;
+         z-index: 2;
+     }
+     
+     body {
+         margin: 0;
+         padding: 0;
+         font-family: sans-serif;
+     }
+     /*header section*/
+     
+     .headerSec {
+         height: 100vh;
+         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/bg1.jpg');
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+     
+     .userImg {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         img {
+             width: 200px;
+             border: 2px solid #6caed5;
+             border-radius: 55%;
+         }
+         h1 {
+             font-size: 5vw;
+         }
+     }
+     /*navbar */
+     
+     .navbar {
+         position: sticky;
+         top: 0;
+         z-index: 2;
+     }
+     
+     .sticky {
+         position: fixed;
+         top: 0;
+         width: 100%;
+     }
+     /*about*/
+     
+     .about {
+         .about1 {
+             img {
+                 width: 200px;
+             }
+         }
+     }
+     /*progress*/
+     
+     .progressBar {
+         span {
+             font-family: Arial, Helvetica, sans-serif;
+             font-weight: 600;
+         }
+     }
+     
+     .progress {
+         border-radius: 16px !important;
+     }
+     
+     .progress-bar {
+         background: #000 !important;
+         border-radius: 16px !important;
+     }
+     
+     .personalInfo {
+         h3 {
+             color: rgba(0, 0, 0, 0.673);
+         }
+         p {
+             line-height: 12px;
+         }
+     }
+     /*  resume section css here*/
+     
+     .timeline {
+         list-style-type: none;
+         position: relative;
+         li {
+             margin: 10px 0 10px 10px;
+             background: #fff;
+             box-shadow: 3px 1px 20px -10px #555;
+             p {
+                 padding: 10px;
+             }
+             h4 {
+                 background: #000;
+                 color: #fff;
+                 padding-left: 10px;
+             }
+         }
+     }
+     
+     .timeline:before {
+         content: '';
+         background: #555;
+         display: inline-block;
+         position: absolute;
+         left: 29px;
+         width: 2px;
+         height: 100%;
+         z-index: 1;
+     }
+     
+     .timeline li:before {
+         content: '';
+         background: #fff;
+         display: inline-block;
+         position: absolute;
+         border-radius: 50%;
+         border: 3px solid #000;
+         left: 20px;
+         width: 20px;
+         height: 20px;
+         z-index: 1;
+     }
+     /*service section css here*/
+     
+     .serviceBox {
+         background: rgba(146, 158, 190, 0.56);
+         border-radius: 0px 30px 0px 30px;
+     }
+     
+     .serviceBox:hover {
+         background: rgba(0, 0, 0, 0.796);
+         color: #fff;
+         border-radius: 30px 0px 30px 0px;
+         transition: 1s;
+     }
+     /*conatct section css here*/
+     
+     .contactSec {
+         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/contact.jpg');
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+     /*hire section*/
+     
+     .hireBtn button {
+         box-shadow: -1px 4px 10px 1px #858585c9;
+     }
+     /*social icon css here*/
+     
+     .socialIcon {
+         position: fixed;
+         top: 50%;
+         transform: translateY(-50%);
+         z-index: 1;
+         width: 80px;
+         ul {
+             padding: initial;
+         }
+         li {
+             height: 40px;
+             width: 40px;
+             list-style-type: none;
+             padding-left: 12px;
+             padding-top: 6px;
+             margin-top: 5px;
+             color: #fff;
+             background: #000;
+         }
+     }
+     
+     .socialIcon li:hover {
+         padding-left: 25px;
+         width: 60px;
+         transition: .8s;
+     }
